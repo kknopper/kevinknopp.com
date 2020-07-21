@@ -1,0 +1,100 @@
+//Viewports
+$xlarge: 1440px;
+$large: 1280px;
+$medium: 1068px;
+$small: 736px;
+$xsmall: 320px;
+
+@mixin breakpoint($point) {
+	@if $point == xxl-desktop {
+		@media (max-width: $bp-xxxlarge) {
+			@content;
+		}
+	} @else if $point == xl-desktop {
+		@media (max-width: $bp-xxlarge) {
+			@content;
+		}
+	} @else if $point == l-desktop {
+		@media (max-width: $xlarge) {
+			@content;
+		}
+	} @else if $point == desktop {
+		@media (max-width: $large) {
+			@content;
+		}
+	} @else if $point == tablet {
+		@media (max-width: $medium) {
+			@content;
+		}
+	} @else if $point == mobile {
+		@media (max-width: $small) {
+			@content;
+		}
+	} @else if $point == s-mobile {
+		@media (max-width: $xsmall) {
+			@content;
+		}
+	} @else {
+		@media (min-width: #{$point}) {
+			@content;
+		}
+	}
+}
+
+// Breakpoints
+$bp-xxsmall: 20em; //320px
+$bp-small: 30em; // 480px
+$bp-medium: 40em; // 640px
+$bp-large: 60em; // 960px
+$bp-xlarge: 80em; // 1280px
+$bp-xxlarge: 90em; // 1440px
+$bp-xxxlarge: 90em; //
+// @mixin breakpoint($point) {
+// 	@if $point == xxl-desktop {
+// 		@media (min-width: $bp-xxxlarge) {
+// 			@content;
+// 		}
+// 	} @else if $point == xl-desktop {
+// 		@media (min-width: $bp-xxlarge) {
+// 			@content;
+// 		}
+// 	} @else if $point == l-desktop {
+// 		@media (min-width: $bp-xlarge) {
+// 			@content;
+// 		}
+// 	} @else if $point == desktop {
+// 		@media (min-width: $bp-large) {
+// 			@content;
+// 		}
+// 	} @else if $point == tablet {
+// 		@media (min-width: $bp-medium) {
+// 			@content;
+// 		}
+// 	} @else if $point == mobile {
+// 		@media (min-width: $bp-small) {
+// 			@content;
+// 		}
+// 	} @else if $point == s-mobile {
+// 		@media (min-width: $bp-xsmall) {
+// 			@content;
+// 		}
+// 	} @else {
+// 		@media (min-width: #{$point}) {
+// 			@content;
+// 		}
+// 	}
+// }
+
+@mixin font($filename, $family, $weight:'normal', $style:'normal', $url:'../fonts/') {
+  @font-face {
+    font-family: $family;
+    src: url('#{$url}#{$filename}.eot'); /* IE9 Compat Modes */
+    src: url('#{$url}#{$filename}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('#{$url}#{$filename}.woff2') format('woff2'),
+         url('#{$url}#{$filename}.woff') format('woff'), /* Pretty Modern Browsers */
+         url('#{$url}#{$filename}.ttf') format('truetype'),
+         url('#{$url}#{$filename}.svg##{$filename}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}

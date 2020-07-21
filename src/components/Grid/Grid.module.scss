@@ -1,0 +1,15 @@
+@import "../../styles/helpers/mixins.scss";
+
+.grid {
+	display: grid;
+}
+
+.half {
+	composes: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 25px;
+
+	@include breakpoint(mobile) {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,31 @@
+.post {
+	display: grid;
+	grid-template-columns: 110px auto;
+	grid-template-rows: auto;
+
+}
+
+.excerpt {
+	grid-area: excerpt 2 / 2;
+}
+
+.date {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 105px;
+	height: 105px;
+	border-radius: 50%;
+	color: var(--theme-color-white);
+	background: var(--theme-color-primary);
+
+	h2, h3, hgroup {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.date-text {
+	width: auto;
+}

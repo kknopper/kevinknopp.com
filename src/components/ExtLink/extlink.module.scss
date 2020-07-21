@@ -1,0 +1,26 @@
+.external-link {
+	font-family: Milkshake;
+	color: var(--theme-color-primary);
+	text-decoration: none;
+	text-transform: capitalize;
+	display: inline-block;
+	position: relative;
+
+	&:hover {
+		&:after {
+			opacity: 1;
+		}
+	}
+
+	&:after  {
+		content: "";
+		height: 2px;
+		width: 100%;
+		display: block;
+		position: absolute;
+		bottom: 2px;
+		background: var(--theme-color-primary);
+		opacity: 0;
+		transition: all 0.3s;
+	}
+}
