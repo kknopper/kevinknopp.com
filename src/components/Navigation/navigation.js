@@ -1,7 +1,8 @@
-import React, { useState } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
-import NavList from "./navList"
+import React, { useState } from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import Img from "gatsby-image";
+import NavList from "./navList";
+import ThemeToggle from "../ThemeToggle/themetoggle";
 import Logo from '../../svgs/logo.svg';
 // import { setConfig } from "react-hot-loader"
 
@@ -46,6 +47,7 @@ const Navigation = () => {
 						Tag="figure"
 					/>
 				</div>
+				<ThemeToggle />
 		</nav>
 	)
 }
