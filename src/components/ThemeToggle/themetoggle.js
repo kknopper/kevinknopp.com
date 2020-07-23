@@ -4,9 +4,7 @@ import { ThemeContext } from '../ThemeContext';
 import ToggleCheckbox from '../ToggleCheckbox/togglecheckbox';
 
 const ThemeToggle = ( props ) => {
-	const { colorMode, setColorMode } = React.useContext(
-		ThemeContext
-	);
+	const { colorMode, setColorMode } = React.useContext(ThemeContext);
 
 	//defer rendering of the toggle until after the React app grabs localstorage value
 	if (!colorMode) {
