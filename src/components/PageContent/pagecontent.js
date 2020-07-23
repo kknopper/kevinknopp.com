@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
+
+import Header from "../Header/header";
 import styles from "./pagecontent.module.scss";
 
-const pagecontent = props => {
+const pagecontent = (props) => {
 	return (
-		<div className={styles.pageContent}>
-			{props.children}
-		</div>
+		<>
+			<Header
+				heroTitle={props.heroTitle}
+				heroSubTitle={props.heroSubTitle}
+			/>
+			<main className={styles.pageContent}>{props.children}</main>
+		</>
 	);
 };
 

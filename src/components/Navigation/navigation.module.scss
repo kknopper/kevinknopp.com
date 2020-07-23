@@ -3,6 +3,8 @@
 .nav {
 	width: 100%;
 	max-width: none;
+	position: absolute;
+	z-index: 1;
 
 	width: 100%;
 	display: flex;
@@ -68,6 +70,7 @@
 		}
 
 		li {
+			font-family: Montserrat;
 			display: inline-block;
 			width: auto;
 			text-align: left;

@@ -1,11 +1,11 @@
-
-import React from 'react';
+import React from "react";
+import Layout from "./src/components/Layout/layout";
 
 import {
 	COLOR_MODE_KEY,
 	COLORS,
 	INITIAL_COLOR_MODE_CSS_PROP,
-} from './src/constants';
+} from "./src/constants";
 
 const SiteThemeScriptTag = () => {
 	const codeToRunOnClient = `
@@ -52,12 +52,12 @@ const SiteThemeScriptTag = () => {
 })()
 	`;
 	// eslint-disable-next-line react/no-danger
-	return (
-		<script
-			dangerouslySetInnerHTML={{ __html: codeToRunOnClient }}
-		/>
-	);
+	return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />;
 };
 export const onRenderBody = ({ setPreBodyComponents }) => {
 	setPreBodyComponents(<SiteThemeScriptTag />);
+};
+
+export const wrapPageElement = ({ element, props }) => {
+	return <Layout {...props}>{element}</Layout>;
 };
