@@ -7,8 +7,8 @@ const CopyHeadline = props => {
 
 	return (
 		<div className={styles.blurb}>
-			<h3 className={`theme-color ${props.title.toLowerCase()}`}>{props.title}</h3>
-			<hr className="theme-color-bg-secondary" />
+			<h3 className={`theme-primary ${props.title.toLowerCase()}`}>{props.title}</h3>
+			<hr className="theme-primary-fill-secondary" />
 			{props.children}
 		</div>
 	)

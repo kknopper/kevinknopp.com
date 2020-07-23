@@ -10,7 +10,7 @@ const About = () => (
 		<section className="about-page container">
 		<div className="row">
 			<div className="education grid-half">
-				<div className="icon-wrap theme-color-border-secondary">
+				<div className="icon-wrap theme-primary-border-secondary">
 					{/* <svg width="104px" height="104px" viewBox="0 0 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
 			<desc>Created with Sketch.</desc>
@@ -19,7 +19,7 @@ const About = () => (
 			</defs>
 			<g id="Education-Graphic" stroke="none" fill="none" stroke-width="1" fill-rule="evenodd">
 					<g>
-							<path d="M32.0173592,87.1362485 C37.908,90.6005592 44.7608932,92.5977631 52.0752233,92.5977631 C59.075534,92.5977631 65.6547961,90.7691806 71.3707573,87.5744621 L71.3707573,68.8322485 C71.3707573,64.4248699 69.402835,60.4627728 66.3141359,57.7527146 C70.2368544,53.9390447 72.6833786,48.6138408 72.6833786,42.7100738 C72.6833786,33.6449087 66.9371262,25.9226563 58.8887379,22.9864233 C58.5201942,22.852132 52.0721942,25.4915107 51.6945631,25.3774136 C49.771068,24.7968311 46.8489709,22.148365 44.6457864,22.9339184 C36.5206602,25.8297631 30.7057476,33.5913942 30.7057476,42.7100738 C30.7057476,48.6138408 33.1512621,53.9390447 37.0749903,57.7527146 C33.9852816,60.4627728 32.0173592,64.4248699 32.0173592,68.8322485 L32.0173592,87.1362485 Z" id="Fill-1"  className="theme-color-bg"></path>
+							<path d="M32.0173592,87.1362485 C37.908,90.6005592 44.7608932,92.5977631 52.0752233,92.5977631 C59.075534,92.5977631 65.6547961,90.7691806 71.3707573,87.5744621 L71.3707573,68.8322485 C71.3707573,64.4248699 69.402835,60.4627728 66.3141359,57.7527146 C70.2368544,53.9390447 72.6833786,48.6138408 72.6833786,42.7100738 C72.6833786,33.6449087 66.9371262,25.9226563 58.8887379,22.9864233 C58.5201942,22.852132 52.0721942,25.4915107 51.6945631,25.3774136 C49.771068,24.7968311 46.8489709,22.148365 44.6457864,22.9339184 C36.5206602,25.8297631 30.7057476,33.5913942 30.7057476,42.7100738 C30.7057476,48.6138408 33.1512621,53.9390447 37.0749903,57.7527146 C33.9852816,60.4627728 32.0173592,64.4248699 32.0173592,68.8322485 L32.0173592,87.1362485 Z" id="Fill-1"  className="theme-primary-fill"></path>
 							<path d="M45.9348816,39.5811883 C45.9348816,40.5969553 45.1119689,41.419868 44.0962019,41.419868 C43.080435,41.419868 42.2575223,40.5969553 42.2575223,39.5811883 C42.2575223,38.5654214 43.080435,37.7425087 44.0962019,37.7425087 C45.1119689,37.7425087 45.9348816,38.5654214 45.9348816,39.5811883" id="Fill-3" fill="#FEFEFE"></path>
 							<path d="M61.5655767,39.5811883 C61.5655767,40.5969553 60.7426641,41.419868 59.7268971,41.419868 C58.7111301,41.419868 57.8882175,40.5969553 57.8882175,39.5811883 C57.8882175,38.5654214 58.7111301,37.7425087 59.7268971,37.7425087 C60.7426641,37.7425087 61.5655767,38.5654214 61.5655767,39.5811883" id="Fill-5" fill="#FEFEFE"></path>
 							<path d="M44.096,46.3238214 C44.096,46.3238214 44.3726602,51.5823845 51.7576699,51.5823845 C59.1436893,51.5823845 59.7262913,46.3238214 59.7262913,46.3238214" id="Fill-7" fill="#FEFEFE"></path>
@@ -30,17 +30,17 @@ const About = () => (
 									</mask>
 									<g id="Clip-12"></g>
 							</g>
-							<path d="M44.096,23.3052893 L51.9111456,24.9713087" id="Fill-14"  className="theme-color-bg"></path>
+							<path d="M44.096,23.3052893 L51.9111456,24.9713087" id="Fill-14"  className="theme-primary-fill"></path>
 					</g>
 			</g>
 						</svg> */}
 				</div>
-				<h3 className="theme-color">Education</h3>
-				<hr className="theme-color-bg-secondary" />
+				<h3 className="theme-primary">Education</h3>
+				<hr className="theme-primary-fill-secondary" />
 				<p>I gradutated from Cal Poly San Luis Obispo in 2014 with a BS in Graphic Communications and a concentration in Web &amp; Digital Media. My curriculum taught me the best design practices for digital and print. During my time at Cal Poly I found my love for making websites. Cal Poly has a hands on learning environment with a motto of learn by doing. After getting a taste for the exciting world of web development in Cal Poly's first hackathon, I decided to create my own club. My senior year I co-founded the Creative Media Development Club (⌘CMD) to help sponsor future hackathons as well as help teach other students web development.</p>
 			</div>
 			<div className="occupation grid-half">
-				<div className="icon-wrap theme-color-border-secondary">
+				<div className="icon-wrap theme-primary-border-secondary">
 					{/* <svg width="104px" height="103px" viewBox="0 0 104 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 							<desc>Created with Sketch.</desc>
@@ -49,7 +49,7 @@ const About = () => (
 							</defs>
 							<g id="Occupation-Graphic" stroke="none" fill="none" stroke-width="1" fill-rule="evenodd">
 									<g>
-											<path d="M31.7095,66.1704 L31.7095,85.2984 C37.5435,88.7294 44.3305,90.7074 51.5745,90.7074 C58.5075,90.7074 65.0235,88.8954 70.6855,85.7324 L70.6855,66.1704 C70.6855,61.8054 68.7355,57.8814 65.6765,55.1974 C69.5615,51.4204 71.9845,46.1464 71.9845,40.2994 C71.9845,28.8184 62.6775,19.5124 51.1975,19.5124 C39.7175,19.5124 30.4105,28.8184 30.4105,40.2994 C30.4105,46.1464 32.8325,51.4204 36.7185,55.1974 C33.6585,57.8814 31.7095,61.8054 31.7095,66.1704" id="Fill-1"  className="theme-color-bg"></path>
+											<path d="M31.7095,66.1704 L31.7095,85.2984 C37.5435,88.7294 44.3305,90.7074 51.5745,90.7074 C58.5075,90.7074 65.0235,88.8954 70.6855,85.7324 L70.6855,66.1704 C70.6855,61.8054 68.7355,57.8814 65.6765,55.1974 C69.5615,51.4204 71.9845,46.1464 71.9845,40.2994 C71.9845,28.8184 62.6775,19.5124 51.1975,19.5124 C39.7175,19.5124 30.4105,28.8184 30.4105,40.2994 C30.4105,46.1464 32.8325,51.4204 36.7185,55.1974 C33.6585,57.8814 31.7095,61.8054 31.7095,66.1704" id="Fill-1"  className="theme-primary-fill"></path>
 											<g id="Group-5">
 													<mask id="mask-2" fill="white">
 															< xlink:href="#path-1" />
@@ -66,15 +66,15 @@ const About = () => (
 							</g>
 					</svg> */}
 				</div>
-				<h3 className="theme-color">Occupation</h3>
-				<hr className="theme-color-bg-secondary" />
+				<h3 className="theme-primary">Occupation</h3>
+				<hr className="theme-primary-fill-secondary" />
 				<p>My carreer journey began when I applied for the IT department at Cal Poly. I went in with only a design background and an eagerness to learn. I was taught best web development practices from the ground up, and watched Lynda tuturials for days on end. Soon I was fixing bugs on Cal Poly's own website. By my Senior year I was working as the Web Development Manager at Univeristy Graphic Systems, a student-run print shop on campus. I was also leading development for the Mustang News website, our campus paper. I received hands-on, industy experience and got my first job at Rosetta right out of school. Since then I've continued to refine my skills.</p>
 			</div>
 		</div>
 		<div className="row">
 		<div className="grid-full about-site">
-			<h3 className="theme-color">About this site</h3>
-			<hr className="theme-color-bg-secondary" />
+			<h3 className="theme-primary">About this site</h3>
+			<hr className="theme-primary-fill-secondary" />
 		</div>
 		<div className="row">
 			<div className="grid-half">

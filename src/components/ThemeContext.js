@@ -17,7 +17,7 @@ export const ThemeProvider = ({ children }) => {
 		// 1. Update React color-mode state
 		rawSetColorMode(newValue);
 		// 2. Update localStorage
-		window.localStorage.setItem('color-mode', newValue);
+		localStorage.setItem('color-mode', newValue);
 		// 3. Update each color
 		root.style.setProperty(
 			'--color-text', newValue === 'light' ? COLORS.text.light : COLORS.text.dark

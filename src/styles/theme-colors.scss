@@ -1,0 +1,137 @@
+$color-primary: #f06925;
+$color-secondary: #477998;
+$color-tertiary: #72b542;
+$color-black: #272727;
+$color-white: #ffffff;
+
+$konami-primary: #08b2e3;
+$konami-secondary: #588b8b;
+$konami-tertiary: $color-primary;
+
+$color-info: #0088cc; // Blue
+$color-success: #377f31; // Green
+$color-danger: #880e14; // Red
+$color-warning: #dba909; // Yellow
+$color-code: #dd1144;
+
+$color-gray-dark: #808080;
+$color-gray-light: #e5e5e5;
+
+:root {
+	--color-primary: #{$color-primary};
+	--color-secondary: #{$color-secondary};
+	--color-tertiary: #{$color-tertiary};
+	--color-white: #{$color-white};
+
+	--color-text: #{$color-black};
+	--color-background: #{$color-white};
+}
+
+//Theme color config
+.theme {
+	&-primary {
+		color: var(--color-primary);
+		transition: color 0.3s ease-in-out;
+	}
+
+	&-primary-fill {
+		background-color: var(--color-primary);
+		transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
+
+		&-secondary {
+			background-color: var(--color-secondary);
+			fill: var(--color-secondary);
+			transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
+
+			.konami & {
+				background-color: $konami-secondary;
+				fill: $konami-secondary;
+			}
+		}
+
+		&-tertiary {
+			background-color: var(--color-tertiary);
+			fill: var(--color-tertiary);
+			transition: all 0.3s ease-in-out;
+
+			.konami & {
+				background-color: $konami-tertiary;
+				fill: $konami-tertiary;
+			}
+		}
+
+		.konami & {
+			background-color: $konami-primary;
+			fill: $konami-primary;
+		}
+	}
+
+	&-secondary {
+		color: var(--color-secondary);
+		transition: color 0.3s ease-in-out;
+
+		.konami & {
+			color: $konami-secondary;
+		}
+	}
+
+	&-tertiary {
+		color: var(--color-tertiary);
+		transition: color 0.3s ease-in-out;
+
+		.konami & {
+			color: $konami-tertiary;
+		}
+	}
+
+	.konami & {
+		color: $konami-primary;
+	}
+
+	&-background {
+		background-color: var(--color-background);
+		transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
+	}
+
+	&-text {
+		color: var(--color-text);
+		transition: color 0.3s ease-in-out;
+	}
+}
+
+svg.theme-primary-fill {
+	fill: var(--color-primary);
+}
+
+.theme-primary-box-shadow-footer {
+	&:after {
+		box-shadow: 0px 50000px 0px 50000px var(--color-primary);
+		transition: box-shadow 0.3s ease-in-out;
+
+		.konami & {
+			box-shadow: 0px 50000px 0px 50000px $konami-primary;
+		}
+	}
+
+	&-secondary {
+		&:after {
+			box-shadow: 0px 50000px 0px 50000px var(--color-secondary);
+			transition: box-shadow 0.3s ease-in-out;
+
+			.konami & {
+				box-shadow: 0px 50000px 0px 50000px $konami-secondary;
+			}
+		}
+	}
+
+	&-tertiary {
+		&:after {
+			box-shadow: 0px 50000px 0px 50000px var(--color-tertiary);
+			transition: box-shadow 0.3s ease-in-out;
+
+			.konami & {
+				box-shadow: 0px 50000px 0px 50000px $konami-tertiary;
+			}
+		}
+	}
+}

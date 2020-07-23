@@ -9,8 +9,8 @@ export const COLORS = {
 		dark: 'hsl(250deg, 70%, 7%)', // navy navy blue
 	},
 	primary: {
-		light: 'hsl(340deg, 100%, 40%)', // Pinkish-red
-		dark: 'hsl(50deg, 100%, 50%)', // Yellow
+		light: '#f06925', // Theme Orange
+		dark: 'hsl(340deg, 100%, 40%)', // Pinkish-red
 	},
 	secondary: {
 		light: 'hsl(250deg, 100%, 50%)', // Purplish-blue

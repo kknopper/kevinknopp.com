@@ -1,27 +1,24 @@
 import React from 'react';
 
 import { ThemeContext } from '../ThemeContext';
-const ThemeToggle = () => {
+import ToggleCheckbox from '../ToggleCheckbox/togglecheckbox';
+
+const ThemeToggle = ( props ) => {
 	const { colorMode, setColorMode } = React.useContext(
 		ThemeContext
 	);
 
 	//defer rendering of the toggle until after the React app grabs localstorage value
-	// if (!colorMode) {
-	// 	return null;
-	// }
+	if (!colorMode) {
+		return null;
+	}
+
+	const handleChange = (event) => {
+		setColorMode(event.target.checked ? 'dark' : 'light')
+	}
 
 	return (
-		<label>
-			<input
-				type="checkbox"
-				checked={colorMode === 'dark'}
-				onChange={event => {
-					setColorMode(event.target.checked ? 'dark' : 'light');
-				}}
-			/>{' '}
-			Dark
-		</label>
+		<ToggleCheckbox checkState={colorMode === 'dark'} handleChange={handleChange} className={props.className} />
 	);
 };
 
