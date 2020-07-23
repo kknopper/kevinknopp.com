@@ -3,8 +3,9 @@
 .footer {
 	position: relative;
 	margin-top: 65px;
-	color: var(--theme-color-white);
-	background: var(--theme-color-primary);
+	color: var(--color-white);
+	// grid-row-start: 2;
+	// grid-row-end: 3;
 
 
 	a {
@@ -13,7 +14,7 @@
 		line-height: 30px;
 	}
 
-	&-nav {
+	&Nav {
 		display: flex;
 		justify-content: space-between;
 		width: 88%;
@@ -31,7 +32,7 @@
 		}
 	}
 
-	&-share, &-links {
+	&Share, &Links {
 		width: auto;
 		margin: 20px 0 0;
 		vertical-align: top;
@@ -61,7 +62,7 @@
 		}
 	}
 
-	&-share {
+	&Share {
 		display: block;
 		font-size: 1.25em;
 
@@ -72,17 +73,17 @@
 		}
 
 		a {
-			color: var(--theme-color-white);
+			color: var(--color-white);
 		}
 	}
 
-	&-links {
+	&Links {
 		@include breakpoint(tablet) {
 			display: none;
 		}
 	}
 
-	&-legal {
+	&Legal {
 		width: 100%;
 		text-align: center;
 		margin: 0 auto;
@@ -94,7 +95,7 @@
 		}
 	}
 
-	&-logo-caption {
+	&LogoCaption {
 		position: absolute;
 		width: 250px;
 		height: auto;
@@ -109,7 +110,7 @@
     opacity: 0;
 		transition: 0.3s;
 		text-align: center;
-		color: var(--theme-color-white);
+		color: var(--color-white);
 		margin: 0;
 
 		&.active {
@@ -144,10 +145,10 @@
 		}
 	}
 
-	&-logo {
+	&Logo {
 		width: 108px;
 		height: 108px;
-		background-image: url("../../images/halftone.png");
+		// background-image: url("../../images/halftone.png");
 		border-radius: 50%;
 		position: absolute;
 		left: 50%;
@@ -156,7 +157,7 @@
 		z-index: 2;
 	}
 
-	&-logo-img {
+	&LogoImg {
 		display: block;
 		width: 100px;
 		height: 100px;

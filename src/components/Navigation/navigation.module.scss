@@ -3,15 +3,13 @@
 .nav {
 	width: 100%;
 	max-width: none;
-	background-color: var(--theme-color-primary);
 
 	width: 100%;
 	display: flex;
-	color: var(--theme-color-white);
+	color: var(--color-white);
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-
 
 	header & {
 		height: auto;
@@ -22,12 +20,12 @@
 		top: 0;
 	}
 
-	&-active {
+	&Active {
 		header & {
 			transition: all 0.3s ease-in-out;
 		}
 
-		.nav-list {
+		.navList {
 			max-height: 75px;
 			transition-delay: 0s;
 
@@ -42,12 +40,12 @@
 			}
 		}
 
-		.nav-trigger img {
+		.navToggle img {
 			transform: rotate(45deg);
 		}
 	}
 
-	&-list {
+	&List {
 		height: 75px;
 		max-height: 0;
 		display: flex;
@@ -96,15 +94,16 @@
 		}
 	}
 
-	&-list-link {
+	&ListLink {
 		padding: 0 15px;
-		color: var(--theme-color-white);
+		color: var(--color-white);
+		transition: color 0.3s;
 	}
 
-	&-list-link-active {
+	&ListLinkActive {
 		display: inline-block;
-		background: var(--theme-color-white);
-		color: var(--theme-color-primary);
+		background: var(--color-white);
+		color: var(--color-primary);
 		border-radius: 5em;
 
 		// @include breakpoint(tablet) {
@@ -112,7 +111,7 @@
 		// }
 	}
 
-	&-trigger {
+	&Toggle {
 		width: auto;
 		max-height: 50px;
 		position: absolute;
@@ -132,12 +131,18 @@
 		}
 	}
 
-	&-logo {
+	&Logo {
 		position: absolute;
-    max-width: 50px;
-    top: 12.5px;
-    left: 25px;
-    width: 50px;
-    height: 50px;
+		max-width: 50px;
+		top: 12.5px;
+		left: 25px;
+		width: 50px;
+		height: 50px;
+	}
+
+	&ThemeToggle {
+		position: absolute;
+		top: 19px;
+		right: 15px;
 	}
 }

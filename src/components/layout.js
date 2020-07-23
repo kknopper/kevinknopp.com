@@ -26,7 +26,7 @@ const Layout = ( props ) => {
 	`)
 
 	return (
-		<div className='grid'>
+		<div className='grid theme-background theme-text'>
 			<Header siteTitle={data.site.siteMetadata.title} heroTitle={props.heroTitle} heroSubTitle={props.heroSubTitle} />
 			<main>
 				<PageContent>

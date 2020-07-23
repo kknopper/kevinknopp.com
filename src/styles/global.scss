@@ -1,15 +1,9 @@
 @import "helpers/mixins";
 @import "helpers/fonts";
+@import "./theme-colors";
 
-@import "./theme";
-
-:root {
-	--theme-color-primary: #f06925;
-	--theme-color-secondary: #477998;
-	--theme-color-tertiary: #72b542;
-	--theme-color-white: #fff;
-}
-
-a {
-	text-decoration: none;
+//Grav plugin resets:
+.notices p {
+	margin-bottom: 0;
+	padding: 10px 0;
 }

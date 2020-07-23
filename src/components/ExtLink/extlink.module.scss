@@ -1,6 +1,6 @@
 .external-link {
 	font-family: Milkshake;
-	color: var(--theme-color-primary);
+	color: var(--color-primary);
 	text-decoration: none;
 	text-transform: capitalize;
 	display: inline-block;
@@ -19,7 +19,7 @@
 		display: block;
 		position: absolute;
 		bottom: 2px;
-		background: var(--theme-color-primary);
+		background: var(--color-primary);
 		opacity: 0;
 		transition: all 0.3s;
 	}

@@ -38,10 +38,10 @@ const Footer = props => {
 
 
 	return (
-		<footer className={styles.footer}>
-			<figure className={styles.footerLogo} onClick={speakPhrase}>
+		<footer className={`${styles.footer} theme-primary-fill`}>
+			<figure className={`${styles.footerLogo} theme-background`} onClick={speakPhrase}>
 				<figcaption className={active ? styles.footerLogoCaption : `${styles.footerLogoCaption} active`}></figcaption>
-				<figure className={`${styles.footerLogoImg} theme-color-bg`}></figure>
+				<figure className={`${styles.footerLogoImg} theme-primary-fill`}></figure>
 			</figure>
 
 			<nav className={styles.footerNav}>

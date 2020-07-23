@@ -1,0 +1,36 @@
+.toggle-checkbox {
+	& > input {
+		display: none;
+
+		&:checked + i:after {
+			left: 50%;
+		}
+	}
+
+	i {
+		outline: 0;
+		display: block;
+		width: 4em;
+		height: 2em;
+		position: relative;
+		cursor: pointer;
+		background: var(--color-background);
+		border-radius: 2em;
+		padding: 2px;
+		user-select: none;
+		transition: all .4s ease;
+
+		&:after {
+			content: " ";
+			display: block;
+			position: relative;
+			width: 50%;
+			height: 100%;
+			left: 0;
+			background: #f0f0f0;
+			border-radius: 2em;
+			padding: 2px;
+			transition: all .4s ease;
+		}
+	}
+}

@@ -5,6 +5,7 @@
 	width: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 	url("../../images/hero.jpg") 0 50% / cover no-repeat;
+	margin-bottom: 0;
 
 	@include breakpoint(l-desktop) {
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -33,7 +34,7 @@
 
 	&-text {
 		font-family: 'League Spartan';
-		color: var(--theme-color-white);
+		color: var(--color-white);
 		text-align: center;
 		padding-top: 120px;
 

@@ -23,5 +23,5 @@ Hero.propTypes = {
 }
 
 Hero.defaultProps = {
-	heroSubTitle: `I like to <span class="${styles.desText} theme-color">design</span> &amp; <span class="${styles.devText} theme-color">develop</span> awesome websites`,
+	heroSubTitle: `I like to <span class="${styles.desText} theme-primary">design</span> &amp; <span class="${styles.devText} theme-primary">develop</span> awesome websites`,
 }
