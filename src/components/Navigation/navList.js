@@ -28,7 +28,7 @@ const NavList = (props) => {
 		<ul className={props.className}>
 			{links.map((link, i) => (
 				<li key={i}>
-					<Link to={link.path} className={styles.navListLink} activeClassName={styles.navListLinkActive} partiallyActive={link.path === "/" ? false : true}>{link.name}</Link>
+					<Link to={link.path} className={styles.navListLink} activeClassName={styles.navListLinkActive} onClick={props.handleClick} partiallyActive={link.path === "/" ? false : true}>{link.name}</Link>
 				</li>
 			))}
 		</ul>
