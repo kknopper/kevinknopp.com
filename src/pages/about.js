@@ -1,11 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+
+import PageContent from "../components/PageContent/pagecontent"
 import SEO from "../components/seo"
 
 const About = () => (
-	<Layout heroTitle="About" heroSubTitle="Flat design, clean code, & all things orange">
+	<PageContent heroTitle="About" heroSubTitle="Flat design, clean code, & all things orange">
 		<SEO title="About" />
 		<section className="about-page container">
 		<div className="row">
@@ -89,7 +90,7 @@ const About = () => (
 	</div>
 </section>
 
-	</Layout>
+	</PageContent>
 )
 
 export default About
