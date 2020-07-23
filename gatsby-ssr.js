@@ -34,17 +34,19 @@ const SiteThemeScriptTag = () => {
 	const colorMode = getInitialColorMode();
 	const root = document.documentElement;
 
-	root.style.setProperty(
-		'--color-text', colorMode === 'light' ? '${COLORS.text.light}' : '${COLORS.text.dark}'
-	);
+	root.className = colorMode === 'light' ? 'light' : 'dark';
 
-	root.style.setProperty(
-		'--color-background', colorMode === 'light' ? '${COLORS.background.light}' : '${COLORS.background.dark}'
-	);
+	// root.style.setProperty(
+	// 	'--color-text', colorMode === 'light' ? '${COLORS.text.light}' : '${COLORS.text.dark}'
+	// );
 
-	root.style.setProperty(
-		'--color-primary', colorMode === 'light' ? '${COLORS.primary.light}' : '${COLORS.primary.dark}'
-	);
+	// root.style.setProperty(
+	// 	'--color-background', colorMode === 'light' ? '${COLORS.background.light}' : '${COLORS.background.dark}'
+	// );
+
+	// root.style.setProperty(
+	// 	'--color-primary', colorMode === 'light' ? '${COLORS.primary.light}' : '${COLORS.primary.dark}'
+	// );
 
 	root.style.setProperty('--initial-color-mode', colorMode);
 })()
